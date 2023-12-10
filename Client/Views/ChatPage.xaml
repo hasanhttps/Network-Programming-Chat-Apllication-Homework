@@ -15,7 +15,7 @@
             <ColumnDefinition Width="119*"/>
         </Grid.ColumnDefinitions>
 
-        <Grid Grid.Column="0">
+        <Grid Grid.Column="0" Margin="0,-10,0,0">
 
             <Grid.Background>
                 <LinearGradientBrush>
@@ -57,7 +57,7 @@
 
                     <Label Content="Direct" Background="Transparent" Foreground="#8982BD" Margin="20 5 0 5"/>
 
-                    <ListView x:Name="Direct" Background="Transparent" ItemsSource="{Binding Users, Mode=OneWay}" d:DataContext="{d:DesignInstance local:ChatPage, IsDesignTimeCreatable=True}" BorderBrush="Transparent" SelectionChanged="Direct_SelectionChanged">
+                    <ListView x:Name="Direct" Background="Transparent" ItemsSource="{Binding Users, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" d:DataContext="{d:DesignInstance local:ChatPage, IsDesignTimeCreatable=True}" BorderBrush="Transparent" SelectionChanged="Direct_SelectionChanged">
 
                         <ListView.ItemTemplate>
                             <DataTemplate>

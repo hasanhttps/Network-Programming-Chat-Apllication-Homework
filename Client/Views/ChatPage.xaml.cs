@@ -4,11 +4,10 @@ using System.Windows;
 using Models.Classes;
 using Client.Commands;
 using System.Windows.Input;
+using System.ComponentModel;
+using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Collections.ObjectModel;
-using System.Threading.Tasks;
-using System.Collections.Concurrent;
-using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 namespace Client.Views {
@@ -76,7 +75,7 @@ namespace Client.Views {
 
         private void ListenClient() {
 
-            Task.Run(async () => {
+            Task.Run(() => {
 
                 while (true) {
 
