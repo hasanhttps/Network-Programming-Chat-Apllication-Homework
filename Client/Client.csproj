@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Static Files\Images\icons8-edit-24.png" />
+    <None Remove="Static Files\Images\icons8-ellipsis-v-24.png" />
+    <None Remove="Static Files\Images\icons8-search-24.png" />
+    <None Remove="Static Files\Images\icons8-send-message-48.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Static Files\Images\icons8-edit-24.png" />
+    <Resource Include="Static Files\Images\icons8-ellipsis-v-24.png" />
+    <Resource Include="Static Files\Images\icons8-search-24.png" />
+    <Resource Include="Static Files\Images\icons8-send-message-48.png" />
+  </ItemGroup>
+
+</Project>

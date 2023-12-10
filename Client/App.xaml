@@ -1,0 +1,14 @@
+﻿<Application x:Class="Client.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Client"
+             StartupUri="Views/MainView.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <BitmapImage x:Key="Ellipsis" UriSource="Static Files/Images/icons8-ellipsis-v-24.png"/>
+            <BitmapImage x:Key="Search" UriSource="Static Files/Images/icons8-search-24.png"/>
+            <BitmapImage x:Key="Edit" UriSource="Static Files/Images/icons8-edit-24.png"/>
+            <BitmapImage x:Key="SendMessage" UriSource="Static Files/Images/icons8-send-message-48.png"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
