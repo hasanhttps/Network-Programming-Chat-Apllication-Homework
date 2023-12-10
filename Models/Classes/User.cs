@@ -9,7 +9,7 @@ public class User {
 
     public int Id { get; set; }
     public string Username { get; set; }
-    public IPEndPoint EndPoint { get; set; }
     public string LatestOnline { get; set; }
     public string LatestMessage { get; set; }
+    public List<string> Messages { get; set; } = new List<string>();
 }

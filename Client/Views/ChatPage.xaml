@@ -6,6 +6,7 @@
       xmlns:local="clr-namespace:Client.Views"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+      d:DataContext="{d:DesignInstance local:ChatPage, IsDesignTimeCreatable=True}"
       Title="ChatPage">
 
     <Grid>
@@ -56,7 +57,7 @@
 
                     <Label Content="Direct" Background="Transparent" Foreground="#8982BD" Margin="20 5 0 5"/>
 
-                    <ListView x:Name="Direct" Background="Transparent" ItemsSource="{Binding Users}" BorderBrush="Transparent">
+                    <ListView x:Name="Direct" Background="Transparent" ItemsSource="{Binding Users, Mode=OneWay}" d:DataContext="{d:DesignInstance local:ChatPage, IsDesignTimeCreatable=True}" BorderBrush="Transparent" SelectionChanged="Direct_SelectionChanged">
 
                         <ListView.ItemTemplate>
                             <DataTemplate>
